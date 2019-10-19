@@ -22,6 +22,6 @@ const SCHEMA = new Schema(
     }
 );
 
-const Notifications = model("Notifications", SCHEMA);
+const Notifications = model("Notification", SCHEMA);
 
-module.exports = Notifications;
+module.exports = Notification;

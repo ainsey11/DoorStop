@@ -16,6 +16,6 @@ const SCHEMA = new Schema(
     }
 );
 
-const RemoteAgents = model("RemoteAgents", SCHEMA);
+const RemoteAgents = model("RemoteAgent", SCHEMA);
 
-module.exports = RemoteAgents;
+module.exports = RemoteAgent;

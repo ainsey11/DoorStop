@@ -19,8 +19,14 @@ const SCHEMA = new Schema(
         Type: String,
         enum: ["Disk","Tape","Azure","S3"]
     },
-    StorageRef: Object,
-    Notification: Object
+    Notification: {
+        type: mongoose.Types.ObjectId,
+        ref: "Notification"
+    },
+    StorageConfiguration: {
+        type: mongoose.Types.ObjectId,
+        ref: "StorageConfiguration"
+    }
     },
     {
         collection: "Jobs",
@@ -29,6 +35,6 @@ const SCHEMA = new Schema(
     }
 );
 
-const Jobs = model("Jobs", SCHEMA);
+const Jobs = model("Job", SCHEMA);
 
-module.exports = Jobs;
+module.exports = Job;
