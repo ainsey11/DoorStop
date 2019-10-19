@@ -26,6 +26,10 @@ const SCHEMA = new Schema(
     StorageConfiguration: {
         type: mongoose.Types.ObjectId,
         ref: "StorageConfiguration"
+    },
+    JobConfiguration: {
+        type: mongoose.Types.ObjectId,
+        ref: "JobConfiguration"
     }
     },
     {
@@ -34,6 +38,6 @@ const SCHEMA = new Schema(
     }
 );
 
-const Jobs = model("Job", SCHEMA);
+const Job = model("Job", SCHEMA);
 
 module.exports = Job;
