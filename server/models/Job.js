@@ -27,10 +27,6 @@ const SCHEMA = new Schema(
         type: mongoose.Types.ObjectId,
         ref: "StorageConfiguration"
     },
-    JobConfiguration: {
-        type: mongoose.Types.ObjectId,
-        ref: "JobConfiguration"
-    }
     },
     {
         collection: "Jobs",

@@ -5,7 +5,7 @@ const SCHEMA = new Schema(
     Name: String,
     Type: {
         type: String,
-        enum: ["Disk","Tape","Azure","S3"]
+        enum: ["Disk","Tape","Azure","S3","USB"]
     },
     DiskPath: String,
     DiskCompression: Boolean,
@@ -24,7 +24,11 @@ const SCHEMA = new Schema(
     S3SecretKey: String,
     S3Bucket: String,
     S3UseSSL: Boolean,
-    S3Compression: Boolean
+    S3Compression: Boolean,
+    USBDeviceID: String,
+    USBMountPath: String,
+    USBCompression: Boolean,
+    USBUmountOnComplete: Boolean,
     },
     {
         collection: "StorageConfigurations",
