@@ -14,7 +14,12 @@ const SCHEMA = new Schema(
         type: String,
         enum: ["New","In-Progress","Completed","Errored","Scheduled","Paused"],
         default: "New",
-    }
+    },
+    StorageType: {
+        Type: String,
+        enum: ["Disk","Tape","Azure","S3"]
+    },
+    StorageRef: Object
     },
     {
         collection: "Jobs",
