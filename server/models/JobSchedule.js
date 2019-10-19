@@ -16,6 +16,6 @@ const SCHEMA = new Schema(
     }
 );
 
-const Jobs = model("RemoteAgents", SCHEMA);
+const Jobs = model("Jobs", SCHEMA);
 
 module.exports = Jobs;
