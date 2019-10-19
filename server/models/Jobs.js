@@ -12,7 +12,8 @@ const SCHEMA = new Schema(
     },
     State: {
         type: String,
-        enum: ["In-Progress","Completed","Errored","Scheduled","Paused"]
+        enum: ["New","In-Progress","Completed","Errored","Scheduled","Paused"],
+        default: "New",
     }
     },
     {
