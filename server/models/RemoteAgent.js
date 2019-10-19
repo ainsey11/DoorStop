@@ -11,7 +11,6 @@ const SCHEMA = new Schema(
     },
     {
         collection: "RemoteAgents",
-        strict: false,
         timestamps: true
     }
 );

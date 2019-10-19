@@ -17,7 +17,6 @@ const SCHEMA = new Schema(
     },
     {
         collection: "Notifications",
-        strict: false,
         timestamps: true
     }
 );

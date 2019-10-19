@@ -30,7 +30,6 @@ const SCHEMA = new Schema(
     },
     {
         collection: "Jobs",
-        strict: false,
         timestamps: true
     }
 );
