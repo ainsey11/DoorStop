@@ -6,8 +6,14 @@ const SCHEMA = new Schema(
     Schedule: String,
     NextRun: Date,
     LastRun: Date,
-    Type: String, //Agent or Pull Based
-    State: String
+    Type: {
+        type: String,
+        enum: ["Agent","Pull","Push"]
+    },
+    State: {
+        type: String,
+        enum: ["In-Progress","Completed","Errored","Scheduled","Paused"]
+    }
     },
     {
         collection: "Jobs",
