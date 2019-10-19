@@ -19,7 +19,8 @@ const SCHEMA = new Schema(
         Type: String,
         enum: ["Disk","Tape","Azure","S3"]
     },
-    StorageRef: Object
+    StorageRef: Object,
+    Notification: Object
     },
     {
         collection: "Jobs",
