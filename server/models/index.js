@@ -1,7 +1,17 @@
-const BackupClients = require("./BackupClients");
+const RemoteAgent = require("./RemoteAgent");
+const Job = require("./Job");
+const JobHistory = require("./JobHistory");
+const Notification = require("./Notification");
+const StorageConfiguration = require("./StorageConfiguration");
+const FileLog = require("./FileLog");
 
 const EXPORTS = {
-    BackupClients,
+    RemoteAgent,
+    Job,
+    JobHistory,
+    Notification,
+    StorageConfiguration,
+    FileLog
 };
 
 module.exports = EXPORTS;
