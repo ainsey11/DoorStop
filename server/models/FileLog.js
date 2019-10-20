@@ -12,7 +12,13 @@ const SCHEMA = new Schema(
         },
         TotalFiles: Int32Array,
         TotalSize: Int32Array,
-        FilesBackedUp: Array
+        FilesBackedUp: [
+            {
+                Name: String,
+                Path: String,
+                Size: Int32Array
+            }
+        ]
     },
     {
         collection: "JobHistories",
@@ -20,6 +26,6 @@ const SCHEMA = new Schema(
     }
 );
 
-const JobHistory = model("JobHistory", SCHEMA);
+const FileLog = model("FileLogs", SCHEMA);
 
-module.exports = JobHistory;
+module.exports = FileLog;
